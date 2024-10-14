@@ -1,57 +1,43 @@
-# Rock-Paper-Scissor-game
-This is a classic Rock-Paper-Scissors game built using HTML, CSS, and JavaScript. You can play against the computer, and the game follows the traditional rules of Rock-Paper-Scissors.
+# Rock Paper Scissors Game
 
-# Game Features
-Play against the computer in a simple and fun way.
-The game keeps track of both player and computer scores.
-The first player to reach 3 points wins.
-Responsive design for a better experience across devices.
-Smooth animations and hover effects for interactive gameplay.
-Rules
-Rock beats Scissors
-Scissors beats Paper
-Paper beats Rock
-If both the player and computer select the same option, no points are awarded.
-Demo
-Here's a quick look at the game:
+A simple web-based **Rock Paper Scissors** game where the player competes against the computer. The player selects rock, paper, or scissors, and the computer makes a random selection. The winner is determined based on traditional game rules.
+
+## Features
+
+- User vs Computer gameplay
+- Randomized computer choices
+- Score tracking for both the player and the computer
+- Visual feedback on the game outcome
+- Responsive design for different screen sizes
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+## Rules:
+
+- Rock beats Scissors
+- Scissors beat Paper
+- Paper beats Rock
+
+### Prerequisites
+
+- A modern web browser (Chrome, Firefox, Safari, etc.)
+
+### Image 
+- Desktop version
+-![Screenshot (70)](https://github.com/user-attachments/assets/7842024a-30ce-4189-8a12-96a651722dd4)
+- Mobile Responsive
+- ![Screenshot (71)](https://github.com/user-attachments/assets/9f91e55f-be0b-4607-b7bc-297c7d33b170)
 
 
-How to Play
-Choose between Rock, Paper, or Scissors by clicking the respective button.
-The computer will randomly choose one of the three options.
-The game will determine the winner and update the score accordingly.
-The first to reach 3 points wins!
-Installation and Usage
-Clone the repository:
+### Contributing
+- Feel free to contribute to this project by submitting pull requests or reporting issues.
 
-bash
-Copy code
-git clone https://github.com/your-username/rock-paper-scissors.git
-Navigate to the project folder:
+### Installation
 
-bash
-Copy code
-cd rock-paper-scissors
-Open index.html in your browser: You can open the index.html file directly in any browser to start playing the game.
-
-Project Structure
-arduino
-Copy code
-rock-paper-scissors/
-├── images/
-│   └── background.png
-├── index.html
-├── style.css
-└── script.js
-index.html: The main HTML file that structures the game.
-style.css: The file containing the styles for the game.
-script.js: The JavaScript logic for the game, including scorekeeping and computer decisions.
-Technologies Used
-HTML5
-CSS3
-JavaScript (ES6)
-Contribution
-Feel free to submit pull requests if you want to enhance the game or fix any bugs. All contributions are welcome!
-
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+1. **Clone the repository** to your local machine using:
+   ```bash
+   git clone https://github.com/engrkhizarkhan/rock-paper-scissors game.git
