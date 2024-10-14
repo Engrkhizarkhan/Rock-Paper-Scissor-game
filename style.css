@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    overflow: hidden;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.4) blur(10px);
+    opacity: 0.6;
+}
+
+.main-heading {
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.main-heading h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.score-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15rem;
+    padding-top: 50px;
+    font-size: 2rem;
+    font-family: roboto;
+}
+.material-symbols-outlined{
+    color: brown;
+}
+.rules{
+    background-color: rgba(235, 227, 217, 0.418);
+    text-align: center;
+    max-width: 400px;
+    max-height: auto;
+    padding: 10px 12px;
+    margin: auto;
+    border-radius: 15px;
+    font-family: roboto;
+}
+.rules summary{ 
+    align-items: center;
+    font-size: 32px; 
+    justify-content: center;
+    text-align: center;
+}
+.rules ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 12px;
+}
+.rules:hover{
+    background-color: rgba(250, 235, 215, 0.541);
+}
+.main-btn{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    font-family: roboto;
+    font-size: 27px;
+    margin: 0 300px 0 300px;
+    top: 170px;
+}
+.btn{
+    background-color: rgba(240, 248, 255, 0.37);
+    padding: 25px 40px;
+    border-radius: 1rem;
+    transition: 500ms;
+}
+.btn:hover {
+    background-color: aliceblue; 
+}
+.btn:hover svg{
+    transform: scale(1.1);
+}
+
+.win-msg{
+    position: fixed;
+    margin-top: 20px;
+    display: flex;
+    left: 42%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
