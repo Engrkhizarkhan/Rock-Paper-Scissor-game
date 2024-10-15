@@ -20,7 +20,7 @@
     </div>
     <div class="rules">
         <details>
-            <summary>Rules <span class="material-symbols-outlined">
+            <summary id="summery">Rules <span class="material-symbols-outlined">
                 developer_guide
                 </span>
             </summary>
@@ -46,11 +46,12 @@
         <div>Computer score: <strong><span id="computer-score">0</span></strong>
         </strong></div>
     </div>
-    <div class="win-msg">Rock beaats paper!!</div>
-    <div class="main-btn">
-    <div class="btn">
+    <div id = "display-msg" class="win-msg">Choose Rock, Paper, or Scissors!</div>
+    <strong><div id="result-msg"></div></strong>
+    <div id = "option-container" class="main-btn ">
+    <div id="rockbtn" class="btn">
         <div>
-        <div class="btn-text">Rock</div>
+        <div  class="btn-text">Rock</div>
         <div class="btn-image"><svg width="50" height="auto" viewBox="0 0 226 199" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.99953 143.668C4.93125 141.51 3.90328 139.352 2.89547 137.194C-4.70344 120.774 4.83047 105.96 13.3364 91.457L25.672 70.462C28.1513 66.2319 31.9608 62.6752 36.637 60.189L72.112 41.3349L107.164 10.2913C109.34 8.35727 112.116 6.99725 115.166 6.37203L139.031 1.43406C150.58 -0.931326 155.539 -0.551481 159.268 3.98938C172.188 19.7011 180.835 32.633 192.344 48.293C198.613 56.8222 213.085 76.4187 213.992 77.7136C216.773 81.7192 215.645 85.0687 215.544 89.6614C215.302 100.245 217.479 110.881 221.994 120.74C223.344 123.675 224.896 126.575 225.602 129.666C226.247 132.446 225.38 150.108 224.715 156.082C224.171 160.934 210.787 179.046 205.99 181.238C200.709 183.655 161.565 195.983 152.918 198.09C144.271 200.196 106.781 192.858 87.3098 190.303C75.2766 188.732 63.2231 187.143 51.1898 185.572C40.7489 184.208 30.3684 185.244 24.5231 176.214C17.6498 165.647 11.482 154.787 5.99953 143.668Z" fill="url(#paint0_linear_0_1)"/>
             <path d="M51.1697 185.555C63.203 187.126 75.2564 188.714 87.2897 190.285C93.5583 191.114 101.701 192.426 110.147 193.773C104.463 188.006 95.977 181.169 90.293 175.403C89.0634 174.159 87.8137 172.864 87.3703 171.276C86.9067 169.584 87.4308 167.84 87.975 166.165C89.7084 160.675 90.1519 154.718 91.8853 149.228C81.142 151.369 56.3902 155.443 54.3544 154.943C52.0969 154.39 50.2627 152.992 48.5091 151.628C35.7502 141.648 25.7728 131.582 16.0172 119.41C14.8683 117.977 13.6992 116.492 13.2759 114.783C12.8728 113.177 13.1752 111.52 13.4775 109.914C14.2031 105.908 15.8156 94.8066 17.1056 85.017L13.3163 91.457C4.83047 105.96 -4.70344 120.774 2.91562 137.194C3.92344 139.369 4.95141 141.527 6.01969 143.668C11.4874 154.785 17.6576 165.638 24.503 176.179C30.3281 185.227 40.7288 184.191 51.1697 185.555Z" fill="url(#paint1_linear_0_1)"/>
@@ -98,9 +99,9 @@
             </div>
         </div>
     </div>
-    <div class="btn">
+    <div id= "paperbtn" class="btn">
         <div>
-        <div class="btn-text">Paper</div>
+        <div  class="btn-text">Paper</div>
         <div class="btn-image"><svg width="50" height="auto" viewBox="0 0 293 338" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <mask id="mask0_2_25" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="293" height="338">
             <rect x="0.668945" y="0.506805" width="291.857" height="336.836" fill="url(#pattern0_2_25)"/>
@@ -122,9 +123,9 @@
             </div>
         </div>
     </div>
-    <div class="btn">
+    <div id = "scissorbtn" class="btn">
         <div>
-        <div class="btn-text">Scissor</div>
+        <div  class="btn-text">Scissor</div>
         <div class="btn-image"><svg width="50" height="auto" viewBox="0 0 467 508" fill="none" xmlns="http://www.w3.org/2000/svg">
             <mask id="mask0_0_1" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="34" width="467" height="334">
             <path d="M0.333313 34H466.443V367.333H0.333313V34Z" fill="white"/>
@@ -140,10 +141,14 @@
             <path d="M306.51 205.625C305.339 196.141 304.484 183.911 306.323 175.51C309.172 162.484 363.656 48.8594 381.531 11.7708C386.703 9.43748 391.896 7.38019 396.771 5.79685L397.932 5.44269C393.531 15.7239 373.917 59.0208 353.76 103.099C331.12 152.609 308.474 201.75 308.474 201.75L306.516 205.625H306.51Z" fill="#E9E9E9"/>
             <path d="M276.13 194.021C283.125 194.021 288.792 199.693 288.792 206.688C288.792 213.688 283.125 219.359 276.13 219.359C269.141 219.359 263.474 213.688 263.474 206.688C263.474 199.693 269.141 194.021 276.13 194.021ZM276.13 196.948C270.755 196.948 266.396 201.307 266.396 206.688C266.396 212.073 270.755 216.432 276.13 216.432C281.51 216.432 285.87 212.073 285.87 206.688C285.87 201.307 281.51 196.948 276.13 196.948Z" fill="#231F20"/>
             </svg>
-            
             </div>
         </div>
     </div>
     </div>
+    <div class="btn-div">
+    <button id="rest-button" class="rest-btn" >Rest Btn</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
