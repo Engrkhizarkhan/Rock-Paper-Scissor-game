@@ -15,6 +15,10 @@ A simple web-based **Rock Paper Scissors** game where the player competes agains
 - HTML
 - CSS
 - JavaScript
+  
+## Hardness
+
+- The computer has the winning chance increase by 30%  
 
 ## Rules:
 
