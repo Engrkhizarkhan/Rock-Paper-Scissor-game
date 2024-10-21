@@ -3,7 +3,7 @@ let computerScore = 0;
 
 const computerInput = (input) => {
     const options = ["Rock", "Paper", "Scissors"];
-    if(Math.random() < 0.0){
+    if(Math.random() < 1){
         if(input === 'Rock')
         return 'Paper'
         if(input === 'Paper')
